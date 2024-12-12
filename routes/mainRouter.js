@@ -5,9 +5,9 @@ const router = new express.Router({ mergeParams: true });
 const {base64Encode} = require("../controllers/mainController")
 
 
-router.post('/base64Encode', base64Encode);
+router.post('/base64Encodes', base64Encode);
 
-router.get('/base64Encode/docs', (req, res) => {
+router.get('/base64Encodes/docs', (req, res) => {
     const docs = {
       name: 'base64Encode',
       description: 'Encode anything to base64',
